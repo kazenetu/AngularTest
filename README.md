@@ -8,6 +8,9 @@ Angularを体得するためのリポジトリ
 ```npm install -g typescript```
 1. Angular Cliインストール  
 ```npm install -g @angular/cli```
+1. Angularのプロジェクトを作成する  
+   ※プロジェクト名を「practice」とする  
+```ng new practice```
 
 # サーバ実行
-ng serve --open
+```ng serve --open```
