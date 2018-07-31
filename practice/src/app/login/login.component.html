@@ -1,0 +1,26 @@
+<div class="mx-auto" style="width:80%;">
+
+  <div class="text-center bg-info">
+    <h1>ログイン</h1>
+  </div>
+
+  <div class="bg-danger" style="color: white;" *ngIf="errorMessage !== ''">
+    {{errorMessage}}
+  </div>
+
+  <form #loginForm="ngForm">
+    <div class="text-center">
+      <label for="userId">ユーザーID:</label>
+      <input type="text" [(ngModel)]="userId" name="userId" required>
+    </div>
+    <div class="text-center">
+      <label for="password">パスワード:</label>
+      <input type="password" [(ngModel)]="password" name="password" required>
+    </div>
+
+    <div class="text-center">
+      <button [disabled]="loginForm.invalid" (click)="login()">ログイン</button>
+    </div>
+  </form>
+
+</div>
