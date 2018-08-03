@@ -14,3 +14,9 @@ Angularを体得するためのリポジトリ
 
 # サーバ実行
 ```ng serve --open```
+
+# メモ
+* コンポーネントの作成  
+  ```ng g component <コンポーネント名>``` 
+* ルーティングの作成  
+  ```ng g module app-routing --flat --module=app``` 
