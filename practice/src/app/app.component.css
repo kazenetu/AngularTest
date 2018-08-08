@@ -1,0 +1,10 @@
+div.header
+{
+  margin-bottom: 1em;
+}
+
+div.main-contents
+{
+  height: 85vh;
+  overflow: auto;
+}

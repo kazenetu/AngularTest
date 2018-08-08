@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-login',
@@ -17,22 +18,17 @@ export class LoginComponent implements OnInit {
    */
   public password: string = '';
 
-  /**
-   * エラーメッセージ
-   */
-  public errorMessage: string = '';
-
   public login(): void {
-    this.errorMessage = '';
+    this.parent.errorMessage = '';
 
     if (this.userId !== 'test') {
-      this.errorMessage += 'ユーザーIDまたはパスワードが異なります。';
+      this.parent.errorMessage += 'ユーザーIDまたはパスワードが異なります。';
       return;
     }
 
   }
 
-  constructor() { }
+  constructor(private parent: AppComponent) { }
 
   ngOnInit() {
   }
