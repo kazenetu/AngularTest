@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { AppComponent } from '../app.component';
 
 @Component({
@@ -26,9 +28,10 @@ export class LoginComponent implements OnInit {
       return;
     }
 
+    this.router.navigate(['menu']);
   }
 
-  constructor(private parent: AppComponent) { }
+  constructor(private parent: AppComponent, private router:Router) { }
 
   ngOnInit() {
   }
